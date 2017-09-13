@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Flip It</string>
+    <string name="demo_parallax_description">Image of a cat</string>
+    <string name="demo_parallax_plus">+</string>
+    <string name="name_app_main">Flip-It</string>
+    <string name="dev_id_1">dev_0001</string>
+    <string name="selected_place">Last Selected Place:</string>
+    <string name="place_details">
+    <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        <i>Place Id: %2$s</i>
+        <br/>
+        Address: %3$s
+        <br/>
+        Phone: %4$s
+        <br/>
+        Website: %5$s
+    ]]>
+    </string>
+    <string name="title_activity_investment">InvestmentActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

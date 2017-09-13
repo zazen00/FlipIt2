@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="false">
+
+    <RelativeLayout
+        android:id="@+id/parallaxContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trans_bg"
+        android:backgroundTint="@color/trans_bg">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cv_topcard"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:minHeight="100dp"
+            android:visibility="gone"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView85"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView86"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="20dp"
+                    android:text="1444 w east street, st.petersburg, FL"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/textView86"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Location "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_topcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:animateLayoutChanges="true"
+            android:elevation="20dp"
+            android:minHeight="100dp"
+            android:nestedScrollingEnabled="true"
+            android:visibility="visible"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoText="false"
+                    android:drawableTint="@color/bg_orange"
+                    android:elegantTextHeight="false"
+                    android:freezesText="false"
+                    android:gravity="center_horizontal"
+                    android:singleLine="false"
+                    android:text="Renovation Costs "
+                    android:textAllCaps="false"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title" />
+
+                <ListView
+                    android:id="@+id/lvmain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView3"
+                    android:entries="@array/numbers"
+                    android:visibility="visible" />
+
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lvmain"
+                    android:text="add"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:minHeight="100dp"
+            android:visibility="visible"
+            app:cardElevation="10dp"
+            app:contentPadding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/inv_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView6"
+                    android:layout_gravity="left|center_vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="15dp"
+                    android:text="$1,205"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Investment "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/parallax_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:backgroundTint="@color/trans_bg"
+            android:contentDescription="@string/demo_parallax_description"
+            android:foregroundTint="@color/trans_bg"
+            android:foregroundTintMode="multiply"
+            android:scaleType="center"
+            android:src="@drawable/bg_kero" />
+        <!--<fragment-->
+            <!--android:id="@+id/place_autocomplete_fragment"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"-->
+            <!--/>-->
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/trans_bg"
+            android:elevation="9dp"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:shadowColor="@color/trans_bg"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            android:theme="@style/AppTheme"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ll_map_main_12"
+            android:layout_margin="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/holo_green_dark"
+            android:ems="10"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:shadowColor="@color/trans_bg"
+            android:text="Create Investment"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            android:theme="@style/AppTheme"
+            android:visibility="gone" />
+
+        <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
+            android:id="@+id/overlay_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/ll_map_main_12"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/et_address"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+        </LinearLayout>
+
+        <!--<com.github.florent37.materialtextfield.MaterialTextField-->
+            <!--android:layout_width="300dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/btn_create"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:elevation="50dp"-->
+            <!--app:mtf_image="@drawable/ic_search_black_24dp"-->
+            <!--app:mtf_labelColor="@color/background"-->
+<!--&gt;-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/material_et"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="Search Address"-->
+                <!--android:textColor="@color/background"-->
+                <!--android:textSize="15sp" />-->
+
+        <!--</com.github.florent37.materialtextfield.MaterialTextField>-->
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/trans_bg"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:shadowColor="@color/trans_bg"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            android:theme="@style/AppTheme" />
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fab_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="45dp"
+            android:visibility="gone"
+            fab:fab_addButtonColorNormal="@color/sdfg"
+            fab:fab_addButtonColorPressed="@color/cardview_light_background"
+            fab:fab_addButtonPlusIconColor="@color/cardview_light_background"
+            fab:fab_addButtonSize="mini"
+            fab:fab_addButtonStrokeVisible="true"
+            fab:fab_expandDirection="left"
+            fab:fab_labelsPosition="right">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/ggggg"
+                fab:fab_colorPressed="@color/colorPrimaryDark"
+                fab:fab_icon="@drawable/ic_edit_black_24dp"
+                fab:fab_size="mini"
+                fab:fab_stroke_visible="true"
+                fab:fab_title="Label on the right" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/ggggg"
+                fab:fab_colorPressed="@color/cardview_shadow_end_color"
+                fab:fab_icon="@drawable/ic_add_black_24dp"
+                fab:fab_size="mini"
+                fab:fab_title="Another one on the right" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fab_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/cv_topcard"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:elevation="@dimen/fab_plus_icon_size"
+            android:visibility="gone"
+            fab:fab_addButtonColorNormal="@color/sdfg"
+            fab:fab_addButtonColorPressed="@color/cardview_light_background"
+            fab:fab_addButtonPlusIconColor="@color/cardview_light_background"
+            fab:fab_addButtonSize="mini"
+            fab:fab_addButtonStrokeVisible="true"
+            fab:fab_expandDirection="down"
+            fab:fab_labelsPosition="right">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/ggggg"
+                fab:fab_colorPressed="@color/colorPrimaryDark"
+                fab:fab_icon="@drawable/ic_edit_black_24dp"
+                fab:fab_size="mini"
+                fab:fab_stroke_visible="true"
+                fab:fab_title="Label on the right" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/ggggg"
+                fab:fab_colorPressed="@color/cardview_shadow_end_color"
+                fab:fab_icon="@drawable/ic_add_black_24dp"
+                fab:fab_size="mini"
+                fab:fab_title="Another one on the right" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fab_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:elevation="10dp"
+            android:pointerIcon="zoom_in"
+            android:visibility="gone"
+            fab:fab_addButtonColorNormal="@color/sdfg"
+            fab:fab_addButtonColorPressed="@color/cardview_light_background"
+            fab:fab_addButtonPlusIconColor="@color/cardview_light_background"
+            fab:fab_addButtonSize="normal"
+            fab:fab_addButtonStrokeVisible="true">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/ggggg"
+                fab:fab_colorPressed="@color/cardview_light_background"
+                fab:fab_icon="@drawable/ic_person_black_24dp"
+                fab:fab_title="Action with a very long name that won\'t fit on the screen" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/action_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/ggggg"
+                fab:fab_colorPressed="@color/cardview_light_background"
+                fab:fab_icon="@drawable/ic_add_black_24dp"
+                fab:fab_title="Action with a very long name that won\'t fit on the screen" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/ggggg"
+                fab:fab_colorPressed="@color/cardview_light_background"
+                fab:fab_icon="@drawable/ic_search_black_24dp"
+                fab:fab_title="Action with a very long name that won\'t fit on the screen" />
+
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="@android:dimen/notification_large_icon_width">
+
+            <!-- Your FAB implementation -->
+
+            <com.globalappdev.flipit.Fab
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="20dp"
+                android:adjustViewBounds="false"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"
+                android:tint="@color/cardview_light_background"
+                fab:fab_colorPressed="@color/bg_orange"
+                fab:fab_icon="@drawable/ic_edit_black_24dp"
+                fab:fab_size="normal"
+                fab:fab_stroke_visible="false"
+                fab:srcCompat="@mipmap/ic_launcher"></com.globalappdev.flipit.Fab>
+
+            <!-- Overlay that dims the screen -->
+
+
+            <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
+                android:id="@+id/overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- Circular reveal container for the sheet -->
+            <io.codetail.widget.RevealLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|right"
+                android:orientation="vertical">
+
+                <!-- Sheet that contains your items -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/fab_sheet"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    fab:cardBackgroundColor="@color/bg_orange">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <ImageButton
+                                android:id="@+id/profile_icon"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_weight="0.3"
+                                android:background="@android:color/transparent"
+                                android:elevation="20dp"
+                                android:foregroundTint="@color/colorAccent"
+                                android:paddingLeft="10dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_account_circle_black_24dp"
+                                android:tint="@color/cardview_light_background"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.7"
+                                android:clickable="true"
+                                android:contextClickable="true"
+                                android:elevation="20dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="Profile"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                android:theme="@android:style/TextAppearance.Material.Inverse" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_add_inv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <ImageButton
+                                android:id="@+id/add_ic"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_weight="0.3"
+                                android:background="@android:color/transparent"
+                                android:elevation="20dp"
+                                android:foregroundTint="@color/colorAccent"
+                                android:paddingLeft="10dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_add_black_24dp"
+                                android:tint="@color/cardview_light_background"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.7"
+                                android:clickable="true"
+                                android:contextClickable="true"
+                                android:elevation="20dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="New Investment"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                android:theme="@android:style/TextAppearance.Material.Inverse" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- TODO: Put your sheet items here -->
+
+                </android.support.v7.widget.CardView>
+            </io.codetail.widget.RevealLinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "408324792304",
+    "firebase_url": "https://flipit-10b06.firebaseio.com",
+    "project_id": "flipit-10b06",
+    "storage_bucket": "flipit-10b06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408324792304:android:7309538ef7281acd",
+        "android_client_info": {
+          "package_name": "com.globalappdev.flipit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408324792304-7ajtdmob3aa14ta01uj5dapip10cpv44.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.globalappdev.flipit",
+            "certificate_hash": "57fcceaac8ae9669c7117313aaefef666b9fd3b5"
+          }
+        },
+        {
+          "client_id": "408324792304-o1r6fekudkq1rhcmuqfll1p0gfeajue1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMEIUb6lF3X7hO3N6Y5-9pjofT5cRtUNE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408324792304-o1r6fekudkq1rhcmuqfll1p0gfeajue1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

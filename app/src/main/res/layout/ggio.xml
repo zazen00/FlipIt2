@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Base.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:addStatesFromChildren="false"
+        android:background="@color/cardview_light_background"
+        android:clickable="false"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="24dp"
+        android:fitsSystemWindows="true"
+        android:theme="?attr/actionBarTheme"
+        app:logo="@drawable/flipitnotxt"
+        app:subtitle="INVESTMENT TRACKING"
+        app:subtitleTextAppearance="@style/TextAppearance.AppCompat.Small"
+        app:title="FLIP-IT"
+        app:titleMarginBottom="10dp"
+        app:titleMarginStart="40dp"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+        app:titleTextColor="@android:color/holo_orange_dark" />
+
+</RelativeLayout>

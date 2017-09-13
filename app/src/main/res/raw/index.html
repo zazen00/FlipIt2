@@ -1,0 +1,20 @@
+<html>
+   <head>
+      <script language="javascript">
+         function getData(){
+               var xhr = new XMLHttpRequest();
+               xhr.open("get", "https://www.google.com/search?hl=en&output=search&tbm=shop&q=hardwood+flooring&btnG=", false);
+               xhr.send();
+               document.body.innerHTML = xhr.responseText;
+          }
+      </script>
+   </head>
+   <body>
+      <center><b><u>Example</u></b></center>
+      <p> <input type="button" onclick= "getData()"
+                 value="Get text from Android EditText">
+      <p> Text from Android EditText is <input type="text"
+                 id="androidEditTextContent" />
+                 <iframe src="www.google.com"></iframe>
+    </body>
+</html>

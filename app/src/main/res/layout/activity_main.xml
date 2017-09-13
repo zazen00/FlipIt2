@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.globalappdev.flipit.ResideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reside_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="-10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_bg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <include
+                layout="@layout/included_w"
+                android:layout_width="350dp"
+                android:layout_height="420dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </FrameLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.globalappdev.chapp.MainActivity">
+
+
+        <LinearLayout
+            android:id="@+id/gj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:elevation="22dp"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/ppppp"
+                layout="@layout/ggio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutshdw"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/gj"
+            android:alpha="0.7"
+            android:background="@color/cardview_shadow_start_color"
+            android:elevation="28dp"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/da_search_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutshdw"
+            android:elevation="100dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp">
+
+                <fragment
+                    android:id="@+id/place_autocomplete_fragment"
+                    android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_map_main_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/da_search_place"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:elevation="24dp"
+            android:foreground="@color/background_dim_overlay"
+            android:foregroundGravity="center"
+            android:foregroundTint="@color/background_dim_overlay"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</com.globalappdev.flipit.ResideLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#bf360c</color>
+    <color name="colorPrimaryDark">#f9a825</color>
+    <color name="colorAccent">#757575</color>
+    <color name="bg_green">#c9deff25</color>
+    <color name="light_accent">#64dd17</color>
+    <color name="dark">#3e2723</color>
+    <color name="trans_bg">#710d0d0d</color>
+    <color name="bg_orange">#f57f17</color>
+    <color name="border_pagerpp">#263238</color>
+    <color name="lockinn">#004d40</color>
+    <color name="white">#ffffff</color>
+    <color name="white_pressed">#3e2723</color>
+    <color name="or">#ef6c00</color>
+    <color name="uuuuuu">#e65100</color>
+    <color name="sdfg">#ff9800</color>
+    <color name="ggggg">#ffa726</color></resources>
